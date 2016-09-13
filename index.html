@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>html5 Video Events and api</title>
+    <style type="text/css" media="screen">
+    	#media_event{
+    		width:400px;
+    		float: right;
+    	}	
+    	.disk{
+    		border: 1px dotted black;
+    	}
+    	#controllers{
+    		width: 700px;
+    		float: left;
+    	}
+    	#media_properties{
+    		width: 400px;
+    		float: right;
+    	}
+    </style>
+  </head>
+  <body>
+  	<h1>Html5 Video Events and Api</h1>
+    
+	<div id="controllers">
+		<video  id="video" controls poster="media/2.png">
+		 
+		  Your browser doesn't support HTML5 video tag.
+		</video>
+		<div id="controllerbar">
+			
+		</div>
+
+	</div>
+
+	<div id="media_event">
+		<div>
+			<p>playlists:</p>
+			<button class="disk" id="small">small video</button>
+			<button class="disk" id='trailer'>trailer video</button>
+		</div>
+	
+		<p>controllers:</p>
+		<button id="play">play</button>
+		<button id='pause'>pause</button>
+		<button id="playbackRatePlus"> playbackRate++ </button>
+		<button id="playbackRateMinus"> playbackRate-- </button>
+		<button id="currentTimeplus">currentTime+10</button>
+		<button id="currentTimeminus">currentTime-10</button>
+		<button id="volumeplus">volume++</button>
+		<button id="volumeminus">volume--</button>
+		<button id="muted">muted</button>
+		<button id="reset">reset</button>
+		<div>
+			<progress id='progress-bar' min='0' max='100' value='0'></progress>
+			<span id='progress-value'></span>
+		</div>
+		<div>
+			<progress id="progress-bar-buffered" value="0" max="100" min='0'></progress>
+			<span id="progress-bar-buffered-value"></span>
+		</div>
+		
+	</div>
+
+	
+	<div id="media_properties">
+		<p>media status:</p>
+	</div>
+	<script src="a.js" type="text/javascript" charset="utf-8" async defer></script>
+  </body>
+</html>
